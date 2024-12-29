@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav>
+      <aside class="logo">qshop</aside>
+      <ul>
+        <li><a href="#homeContainer">home</a></li>
+        <li><a href="">signup</a></li>
+        <li><a href="">login</a></li>
+        <button id="cartButton" class="cart-button">
+          <img src="assets/add-to-cart.png" /> <span id="cartCount">0</span>
+        </button>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="homeContainer">
+      <video src="./assets/homepage3.mp4" autoplay loop muted></video>
+      <article>
+        <h1 data-aos="fade-left">
+          Welcome to <br />
+          <span>Q</span>shop
+        </h1>
+        <button><a href="#productsContainer">Go Shopping</a></button>
+      </article>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productsContainer">
+      <h1>All Products</h1>
+
+      <article id="productsWrapper">
+        <!-- to display all products -->
+      </article>
+    </section>
+    <!-- cart section -->
+    <section id="cartContainer">
+      <h1>My Cart</h1>
+
+      <article id="cart"></article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About QShop</h3>
+          <p>
+            Your one-stop online shopping destination for everything you need.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#homeContainer">Home</a></li>
+            <li><a href="#productsContainer">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Support</h3>
+          <ul>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#shipping">Shipping & Returns</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#facebook">Facebook </a>
+            <a href="#instagram">Twitter</a>
+            <a href="#instagram">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 QShop. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
